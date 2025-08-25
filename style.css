@@ -62,8 +62,8 @@
     text-decoration: none;
     color: black;
 }
-.header-navigation__title {
-    font-weight: 700 !important;
+.header-navigation__nav a:hover {
+    font-weight: 700;
 }
 .header-navigation__form {
     display: flex;
@@ -115,10 +115,10 @@
     line-height: 43px;
     letter-spacing: 10%;
 }
-.section-products__navigation-tab {
-    background-color: #fff !important;
-    color: #000000 !important;
-    font-weight:700 !important; 
+.section-products__navigation a:hover {
+    background-color: #fff;
+    color: #000000;
+    font-weight: 700; 
 }
 .section-products__image {
     display: flex;
@@ -284,6 +284,10 @@
     font-size: 15px;
     line-height: 43px;
     color: #858383;
+}
+.section-details__card-option-tab span:hover {
+    color: #000000;
+    font-weight: 700; 
 }
 .section-details__card-quality {
     display: flex;
