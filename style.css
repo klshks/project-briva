@@ -61,8 +61,10 @@
     line-height: 43px;
     text-decoration: none;
     color: black;
+    transition: 0.3s;
 }
 .header-navigation__nav a:hover {
+    transform: translateY(-5px);
     font-weight: 700;
 }
 .header-navigation__form {
@@ -82,6 +84,10 @@
     line-height: 43px;
     letter-spacing: 10%;
     z-index: 1;
+    transition: 0.3s;
+}
+.header-navigation__form input:hover {
+    transform: scale(1.1, 1.1);
 }
 .section-products {
     display: flex;
@@ -114,8 +120,11 @@
     font-weight: 300; 
     line-height: 43px;
     letter-spacing: 10%;
+    transition: 0.3s;
+    color: #858383;
 }
 .section-products__navigation a:hover {
+    transform: scale(1.05, 1.05);
     background-color: #fff;
     color: #000000;
     font-weight: 700; 
@@ -185,6 +194,12 @@
     margin-left: 10px;
     top: 10px;
 }
+.section-products__image-tab img {
+    transition: 0.3s;
+}
+.section-products__image-tab img:hover {
+    transform: translateX(3px);
+}
 .section-products__footer span {
     font-family: 'Inter', sans-serif;
     font-size: 22px;
@@ -225,6 +240,14 @@
     height: 73px;
     border-radius: 50px;
     background-color: #F1F1F1;
+    color: #C1C1C1;
+}
+.section-details__card-tab a {
+    color: #C1C1C1; 
+}
+.section-details__card-tab a:hover {
+    color: #000000;
+    transform: scale(1.1, 1.1);
 }
 .section-details__card-info {
     display: flex;
@@ -277,15 +300,14 @@
     border-radius: 20.5px;
     text-decoration: none;
     margin-right: 20px;
-}
-.section-details__card-option-tab span {
     font-family: 'Inter', sans-serif;
     font-weight: 300; 
     font-size: 15px;
     line-height: 43px;
     color: #858383;
+    transition: 0.3s;
 }
-.section-details__card-option-tab span:hover {
+.section-details__card-option-tab:hover {
     color: #000000;
     font-weight: 700; 
 }
@@ -326,12 +348,18 @@
     line-height: 26px;
 }
 .section-details__card-text a {
+    display: flex;
+    width: 38px;
+    height: 43px;
     font-family: 'Inter', sans-serif;
     font-weight: 700; 
     font-size: 15px;
     line-height: 43px;
     text-decoration: none;
     color: #000000;
+}
+.section-details__card-text a:hover {
+    transform: scale(1.1, 1.1);
 }
 .section-details__card-button {
     display: flex;
@@ -350,6 +378,9 @@
     font-weight: 400; 
     font-size: 17px;
     line-height: 43px;
+}
+.section-details__card-button:hover {
+    transform: scale(1.1, 1.1);
 }
 .section-package {
     display: flex;
@@ -426,6 +457,12 @@
     border-radius: 20.5px;
     margin-left: 30px;
 }
+.section-package__subtitle-tab img {
+    transition: 0.3s;
+}
+.section-package__subtitle-tab img:hover {
+    transform: translateX(3px);
+}
 .section-bestsellers {
     display: flex;
     height: 875px;
@@ -464,20 +501,30 @@
     width: 219px;
     height: 208px;
     background-color: #D9D9D9;
+    transition: 0.5s;
 }
 .section-bestsellers__cards-long img {
     width: 100%;
     height: 100%;
+}
+.section-bestsellers__cards-long:hover {
+    transform-origin: top;
+    transform: scale(1.05, 1.05);
 }
 .section-bestsellers__cards-short {
     display: flex;
     background-color: #D9D9D9;
     width: 401px;
     height: 455px;
+    transition: 0.5s;
 }
 .section-bestsellers__cards-short img {
     width: 100%;
     height: 100%;
+}
+.section-bestsellers__cards-short:hover {
+    transform-origin: top;
+    transform: scale(1.05, 1.05);
 }
 .section-related {
     width: 100%;
@@ -622,6 +669,10 @@
     font-size: 25px;
     line-height: 40px;
 }
+.footer-top__nav a:hover {
+    transform: translateY(-5px);
+    font-weight: 700;
+}
 .footer-bottom {
     display: flex;
     justify-content: center;
@@ -636,10 +687,32 @@
     gap: 20px;
     margin-top: 40px;
 }
+
 .footer-bottom {
     font-family: 'Inter', sans-serif;
     font-weight: 300; 
     font-size: 23px;
     line-height: 52px;
     color: #AFADAD;
+}
+.footer-top__nav-icons-inst {
+    color: #000000;
+}
+.footer-top__nav-icons-inst:hover {
+    color: #fd02a7;
+    transform: scale(1.1, 1.1);
+}
+.footer-top__nav-icons-facebook {
+    color: #000000;
+}
+.footer-top__nav-icons-facebook:hover {
+    color: #3b5998;
+    transform: scale(1.1, 1.1);
+}
+.footer-top__nav-icons-linkedin {
+    color: #000000;
+}
+.footer-top__nav-icons-linkedin:hover {
+    color: #0e76a8;
+    transform: scale(1.1, 1.1);
 }
