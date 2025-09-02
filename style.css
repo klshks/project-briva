@@ -1,5 +1,7 @@
 @import url(reset.css);
-
+html {
+    scroll-behavior: smooth;
+}
 .header {
     display: flex;
     flex-direction: column;
@@ -668,6 +670,7 @@
     font-weight: 300; 
     font-size: 25px;
     line-height: 40px;
+    transition: 0.3s;
 }
 .footer-top__nav a:hover {
     transform: translateY(-5px);
@@ -714,5 +717,12 @@
 }
 .footer-top__nav-icons-linkedin:hover {
     color: #0e76a8;
+    transform: scale(1.1, 1.1);
+}
+.footer-top__nav-icons-github {
+    color: #000000;
+}
+.footer-top__nav-icons-github:hover {
+    color: #171515;
     transform: scale(1.1, 1.1);
 }
