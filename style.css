@@ -202,6 +202,23 @@ html {
 .section-products__image-tab img:hover {
     transform: translateX(3px);
 }
+.tab-home a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 73px;
+    width: 73px;
+    background-color: #d9d9d9;
+    border-radius: 50px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.tab-home svg {
+    transform: rotate(-90deg);
+}
+.tab-home a:hover {
+    transform: scale(1.1, 1.1);
+}
 .section-products__footer span {
     font-family: 'Inter', sans-serif;
     font-size: 22px;
